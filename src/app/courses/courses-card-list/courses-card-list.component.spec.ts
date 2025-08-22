@@ -13,7 +13,7 @@ import {setupCourses} from '../common/setup-test-data';
 describe('CoursesCardListComponent', () => {
   let component : CoursesCardListComponent;
   let fixture : ComponentFixture<CoursesCardListComponent>;
-  let el:DebugElement;
+  let el:DebugElement; 
 
       beforeEach(waitForAsync ( ()=>{
          TestBed.configureTestingModule({

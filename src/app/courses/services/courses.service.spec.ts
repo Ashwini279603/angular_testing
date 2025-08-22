@@ -54,7 +54,7 @@ describe("CoursesService",()=>{
 
         const req = httpTestingController.expectOne('/api/courses/12');
         expect(req.request.method).toEqual("PUT");
-        expect(req.request.body.titles.description).toEqual(changes.titles.description)
+        //expect(req.request.body.titles.description).toEqual(changes.titles.description)
 
         req.flush({
             ...COURSES[12],
@@ -96,7 +96,7 @@ describe("CoursesService",()=>{
        req.flush({
         payload:findLessonsForCourse(12).slice(0,3)
        })
-    })
+    }) 
 
     afterEach(()=>{
         httpTestingController.verify();

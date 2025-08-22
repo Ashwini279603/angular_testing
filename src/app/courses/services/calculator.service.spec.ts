@@ -21,12 +21,12 @@ describe('calculatorService',()=>{
         // spyOn(logger,'log');
         const result = calculator.add(2,2);
         expect(result).toBe(4);
-        expect(loggerSpy.log).toHaveBeenCalled(1); 
+        expect(loggerSpy.log).toHaveBeenCalledTimes(1);
     });
 
     it('should sub two numbers',()=>{
         const result = calculator.subtract(5,6);
-        expect(result).toBe(-1);
+        expect(result).toBe(-1); 
         expect(loggerSpy.log).toHaveBeenCalledTimes(1);
     });
 })
